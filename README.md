@@ -16,5 +16,5 @@ Below is a list of primary components for this design:
 * Battery backup: 1200mA LiPo 3.7V pouch
 * AC/DC Power converter: MeanWell IRM-03-05
 
-In the schematic each component has an OC_xxx attribute with an product number for a supplier, mainly Farnell for the passives, connectors and other small componetents.
+In the schematic each component has an OC_xxx attribute with an product number for a supplier, mainly Farnell for the passives, connectors and other small components.
 
