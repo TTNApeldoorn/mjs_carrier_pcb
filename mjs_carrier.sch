@@ -935,7 +935,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 3300 7400 3300
 $Comp
-L mjspcb-rescue:CONN_01X02 MJS_P9
+L mjs_carrier-rescue:CONN_01X02-mjspcb-rescue MJS_P9
 U 1 1 58F09344
 P 7800 3850
 F 0 "MJS_P9" H 7800 4000 50  0000 C CNN
@@ -950,7 +950,7 @@ Wire Notes Line
 Wire Notes Line
 	6100 4300 10200 4300
 $Comp
-L mjspcb-rescue:CONN_01X11 MJS_P8
+L mjs_carrier-rescue:CONN_01X11-mjspcb-rescue MJS_P8
 U 1 1 57385E54
 P 9000 2000
 F 0 "MJS_P8" H 9000 2600 50  0000 C CNN
@@ -963,7 +963,7 @@ $EndComp
 Text Notes 6250 4200 0    60   ~ 12
 Meet Je Stad v2
 $Comp
-L mjspcb-rescue:CONN_01X06 MJS_p2
+L mjs_carrier-rescue:CONN_01X06-mjspcb-rescue MJS_p2
 U 1 1 5724DB3A
 P 7800 3250
 F 0 "MJS_p2" H 7800 3600 50  0000 C CNN
@@ -974,7 +974,7 @@ F 3 "" H 7800 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mjspcb-rescue:CONN_01X04 MJS_P3
+L mjs_carrier-rescue:CONN_01X04-mjspcb-rescue MJS_P3
 U 1 1 571A1889
 P 7800 2050
 F 0 "MJS_P3" H 7700 2300 50  0000 C CNN
