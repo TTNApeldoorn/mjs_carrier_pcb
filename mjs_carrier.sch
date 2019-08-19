@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:mjs_carrier-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -192,18 +192,6 @@ Vext
 Wire Wire Line
 	8800 5700 9200 5700
 $Comp
-L Diode:1N5817 D1
-U 1 1 5D53A469
-P 5300 5550
-F 0 "D1" V 5254 5629 50  0000 L CNN
-F 1 "1N5817" V 5345 5629 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5300 5375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5300 5550 50  0001 C CNN
-F 4 "2675093" H 5300 5550 50  0001 C CNN "OC_FARNELL"
-	1    5300 5550
-	0    1    1    0   
-$EndComp
-$Comp
 L Diode:1N5817 D2
 U 1 1 5D53691B
 P 9350 5700
@@ -313,46 +301,17 @@ PM_RX_A3
 Text GLabel 8500 2000 0    39   Input ~ 0
 PM_TX_A2
 Text GLabel 6250 5900 0    39   Input ~ 0
-PM_RX_A2
+PM_RX_A3
 Text GLabel 6250 5800 0    39   Input ~ 0
-PM_TX_A3
-$Comp
-L Transistor_FET:IRF9540N Q1
-U 1 1 5D47F56E
-P 4800 5950
-F 0 "Q1" H 5006 5996 50  0000 L CNN
-F 1 "CSD18511KCS" H 5006 5905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5000 5875 50  0001 L CIN
-F 3 "" H 4800 5950 50  0001 L CNN
-	1    4800 5950
-	1    0    0    -1  
-$EndComp
+PM_TX_A2
 Text Notes 6950 5100 0    39   ~ 0
 SDS011 sensor
-Connection ~ 4900 6600
-Wire Wire Line
-	4900 6150 4900 6600
-Wire Wire Line
-	4350 6600 4900 6600
-Text Label 4900 5300 0    39   ~ 0
-GND_pm
-Text Label 5300 5300 0    50   ~ 0
-Vext
-Wire Wire Line
-	5300 5400 5300 5250
-Wire Wire Line
-	4900 5700 4900 5250
-Connection ~ 4900 5700
-Wire Wire Line
-	5300 5700 4900 5700
-Wire Wire Line
-	4900 5750 4900 5700
 Text Label 6950 5900 0    50   ~ 0
 PM_RX
 Text Label 6950 5800 0    50   ~ 0
 PM_TX
 Text Label 6950 5700 0    50   ~ 0
-GND_pm
+GND
 Wire Wire Line
 	7200 5700 6950 5700
 Wire Wire Line
@@ -383,64 +342,14 @@ Text Notes 4350 4350 0    50   ~ 0
 Data
 Text Notes 4300 4500 0    50   ~ 0
 Power\n
-Text Notes 4450 5100 0    50   ~ 0
-SDS011 low side switch
 Text Notes 4600 4050 0    50   ~ 0
 Temp&Humidity
-Text Label 3550 5950 0    50   ~ 0
-D8
-Wire Wire Line
-	3450 5950 3850 5950
-Wire Wire Line
-	4350 5950 4600 5950
-Connection ~ 4350 5950
-Wire Wire Line
-	4350 6100 4350 5950
-Wire Wire Line
-	4150 5950 4350 5950
-Wire Wire Line
-	4350 6600 4350 6400
-$Comp
-L Adafruit_PowerBoost_500C-eagle-import:GND #0104
-U 1 1 5D390E04
-P 4900 6700
-F 0 "#0104" H 4950 6750 50  0001 C CNN
-F 1 "GND" H 4978 6738 42  0000 L CNN
-F 2 "" H 4900 6700 50  0001 C CNN
-F 3 "" H 4900 6700 50  0001 C CNN
-	1    4900 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5D38BCF8
-P 4350 6250
-F 0 "C2" H 4465 6296 50  0000 L CNN
-F 1 "100N" H 4465 6205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4388 6100 50  0001 C CNN
-F 3 "~" H 4350 6250 50  0001 C CNN
-F 4 "1141777" H 4350 6250 50  0001 C CNN "OC_FARNELL"
-	1    4350 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5D3874B3
-P 4000 5950
-F 0 "R3" H 4070 5996 50  0000 L CNN
-F 1 "330K 1%" H 4070 5905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3930 5950 50  0001 C CNN
-F 3 "~" H 4000 5950 50  0001 C CNN
-F 4 "9341765" H 4000 5950 50  0001 C CNN "OC_FARNELL"
-	1    4000 5950
-	0    -1   -1   0   
-$EndComp
 Text Label 4800 4250 2    50   ~ 0
 GND
 Text Label 4800 4350 2    50   ~ 0
 D7
 Text Label 4800 4450 2    50   ~ 0
-D6
++3V3
 Wire Wire Line
 	4850 4250 4600 4250
 Wire Wire Line
