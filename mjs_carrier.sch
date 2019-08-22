@@ -385,7 +385,7 @@ Text Notes 1800 950  0    50   ~ 0
 50mA
 Connection ~ 3650 3250
 $Comp
-L Adafruit_PowerBoost_500C-eagle-import:GND #0103
+L mjs_carrier-rescue:GND-Adafruit_PowerBoost_500C-eagle-import #0103
 U 1 1 5D34670B
 P 3650 3350
 F 0 "#0103" H 3700 3400 50  0001 C CNN
@@ -478,7 +478,7 @@ Wire Wire Line
 	3450 1500 3300 1500
 Connection ~ 3450 1500
 $Comp
-L Adafruit_PowerBoost_500C-eagle-import:GND #0102
+L mjs_carrier-rescue:GND-Adafruit_PowerBoost_500C-eagle-import #0102
 U 1 1 5D4DF810
 P 3450 1600
 F 0 "#0102" H 3500 1650 50  0001 C CNN
@@ -630,7 +630,7 @@ Wire Wire Line
 	4350 2150 4800 2150
 Connection ~ 4350 2150
 $Comp
-L Adafruit_PowerBoost_500C-eagle-import:GND #0101
+L mjs_carrier-rescue:GND-Adafruit_PowerBoost_500C-eagle-import #0101
 U 1 1 5D4CBF50
 P 4350 2250
 F 0 "#0101" H 4400 2300 50  0001 C CNN
@@ -655,7 +655,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 1300 3950 1300
 $Comp
-L mjs_carrier:AdaFruit_PowerBoost_500c A1
+L mjs_carrier-rescue:AdaFruit_PowerBoost_500c-mjs_carrier A1
 U 1 1 5D4C57CB
 P 4350 1650
 F 0 "A1" H 4350 2225 50  0000 C CNN

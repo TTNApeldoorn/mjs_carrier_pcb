@@ -1,0 +1,15 @@
+Ref        Qnty Value
+C1         1    100N
+D2         1    1N5817
+F1         1    LVR005N
+J1         1    Conn_01x02
+J2         1    Conn_01x03
+J3         1    Conn_01x06
+J4         1    Conn_01x05
+MJS_p2     1    Conn_01X06-mjspcb-rescue
+MJS_P3     1    Conn_01X04-mjspcb-rescue
+MJS_P8     1    Conn_01X11-mjspcb-rescue
+MJS_P9     1    Conn_01X02-mjspcb-rescue
+R1         1    330K 1%
+R2         1    120k 1%
+R6, R5, R4 3    1k
