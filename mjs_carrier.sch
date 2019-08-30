@@ -190,17 +190,17 @@ RXD
 Text Label 8900 5700 0    39   ~ 0
 Vext
 Wire Wire Line
-	8800 5700 9200 5700
+	8800 5700 9100 5700
 $Comp
-L Diode:1N5817 D2
+L mjs_carrier-rescue:1N5817-Diode D2
 U 1 1 5D53691B
-P 9350 5700
-F 0 "D2" H 9350 5916 50  0000 C CNN
-F 1 "1N5817" H 9350 5825 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9350 5525 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9350 5700 50  0001 C CNN
-F 4 "2675093" H 9350 5700 50  0001 C CNN "OC_FARNELL"
-	1    9350 5700
+P 9250 5700
+F 0 "D2" H 9250 5916 50  0000 C CNN
+F 1 "1N5817" H 9250 5825 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9250 5525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9250 5700 50  0001 C CNN
+F 4 "2675093" H 9250 5700 50  0001 C CNN "OC_FARNELL"
+	1    9250 5700
 	1    0    0    -1  
 $EndComp
 Text Label 9550 5600 0    39   ~ 0
@@ -212,17 +212,15 @@ Wire Wire Line
 Wire Wire Line
 	9900 5600 9500 5600
 Wire Wire Line
-	9900 5700 9500 5700
-Wire Wire Line
 	9500 5800 9900 5800
 Wire Wire Line
 	9900 5900 9500 5900
 Wire Wire Line
 	9900 6000 9500 6000
-Text Notes 9800 5100 0    39   ~ 0
+Text Notes 9800 5100 0    50   ~ 0
 Program header
 $Comp
-L Connector_Generic:Conn_01x06 J3
+L mjs_carrier-rescue:Conn_01x06-Connector_Generic J3
 U 1 1 5D511D90
 P 10100 5700
 F 0 "J3" H 10180 5692 50  0000 L CNN
@@ -238,7 +236,7 @@ Programming
 Text Label 6950 5600 0    39   ~ 0
 Vext
 $Comp
-L Connector_Generic:Conn_01x05 J4
+L mjs_carrier-rescue:Conn_01x05-Connector_Generic J4
 U 1 1 5D4F6271
 P 7400 5700
 F 0 "J4" H 7480 5742 50  0000 L CNN
@@ -253,7 +251,7 @@ $EndComp
 Wire Wire Line
 	5300 1700 5550 1700
 $Comp
-L Device:R R6
+L mjs_carrier-rescue:R-Device R6
 U 1 1 5D4DA105
 P 5150 1700
 F 0 "R6" H 5220 1746 50  0000 L CNN
@@ -273,7 +271,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 5800 7200 5800
 $Comp
-L Device:R R5
+L mjs_carrier-rescue:R-Device R5
 U 1 1 5D4B5121
 P 6600 5900
 F 0 "R5" H 6670 5946 50  0000 L CNN
@@ -285,7 +283,7 @@ F 4 "1700237" H 6600 5900 50  0001 C CNN "OC_FARNELL"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L mjs_carrier-rescue:R-Device R4
 U 1 1 5D4921E0
 P 6600 5800
 F 0 "R4" H 6670 5846 50  0000 L CNN
@@ -304,8 +302,8 @@ Text GLabel 6250 5900 0    39   Input ~ 0
 PM_RX_A3
 Text GLabel 6250 5800 0    39   Input ~ 0
 PM_TX_A2
-Text Notes 6950 5100 0    39   ~ 0
-SDS011 sensor
+Text Notes 6950 5150 0    50   ~ 0
+Particulate sensor\nSDS011
 Text Label 6950 5900 0    50   ~ 0
 PM_RX
 Text Label 6950 5800 0    50   ~ 0
@@ -320,7 +318,7 @@ Wire Wire Line
 	7200 5500 6950 5500
 NoConn ~ 6950 5500
 $Comp
-L power:+3.3V #PWR0102
+L mjs_carrier-rescue:+3.3V-power #PWR0102
 U 1 1 5D418C57
 P 9800 1600
 F 0 "#PWR0102" H 9800 1450 50  0001 C CNN
@@ -338,40 +336,36 @@ Text Notes 850  3950 0    50   ~ 0
 1200mAh LiPo
 Text Notes 850  5150 0    50   ~ 0
 PowerBoost 500c
-Text Notes 4350 4350 0    50   ~ 0
+Text Notes 2900 5700 0    50   ~ 0
 Data
-Text Notes 4300 4500 0    50   ~ 0
+Text Notes 2850 5600 0    50   ~ 0
 Power\n
-Text Notes 4600 4050 0    50   ~ 0
-Temp&Humidity
-Text Label 4800 4250 2    50   ~ 0
+Text Notes 3100 5100 0    50   ~ 0
+Temp & Humidity sensor\nAM2305
+Text Label 4600 5800 2    50   ~ 0
 GND
-Text Label 4800 4350 2    50   ~ 0
+Text Label 4050 5700 2    50   ~ 0
 D7
-Text Label 4800 4450 2    50   ~ 0
+Text Label 4600 5300 2    50   ~ 0
 +3V3
 Wire Wire Line
-	4850 4250 4600 4250
-Wire Wire Line
-	4850 4350 4600 4350
-Wire Wire Line
-	4850 4450 4600 4450
+	3600 5600 3350 5600
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L mjs_carrier-rescue:Conn_01x03-Connector_Generic J2
 U 1 1 5D364D8D
-P 5050 4350
-F 0 "J2" H 4968 4667 50  0000 C CNN
-F 1 "Conn_01x03" H 4968 4576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5050 4350 50  0001 C CNN
-F 3 "~" H 5050 4350 50  0001 C CNN
-F 4 "1593412" H 5050 4350 50  0001 C CNN "OC_FARNELL"
-	1    5050 4350
-	1    0    0    1   
+P 3150 5700
+F 0 "J2" H 3068 6017 50  0000 C CNN
+F 1 "Conn_01x03" H 3068 5926 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3150 5700 50  0001 C CNN
+F 3 "~" H 3150 5700 50  0001 C CNN
+F 4 "1593412" H 3150 5700 50  0001 C CNN "OC_FARNELL"
+	1    3150 5700
+	-1   0    0    -1  
 $EndComp
 Text Label 5000 1300 0    50   ~ 0
 Vext
 $Comp
-L Mechanical:MountingHole H5
+L mjs_carrier-rescue:MountingHole-Mechanical H5
 U 1 1 5D353E29
 P 900 5300
 F 0 "H5" H 1000 5346 50  0000 L CNN
@@ -412,7 +406,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 3250 4300 3250
 $Comp
-L Device:C C1
+L mjs_carrier-rescue:C-Device C1
 U 1 1 5D4EDCD6
 P 4300 2950
 F 0 "C1" H 4415 2996 50  0000 L CNN
@@ -424,7 +418,7 @@ F 4 "1141777" H 4300 2950 50  0001 C CNN "OC_FARNEL"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L mjs_carrier-rescue:R-Device R1
 U 1 1 5D4EB6C8
 P 3650 2500
 F 0 "R1" H 3720 2546 50  0000 L CNN
@@ -459,7 +453,7 @@ Wire Wire Line
 Wire Wire Line
 	3950 1600 3650 1600
 $Comp
-L Device:R R2
+L mjs_carrier-rescue:R-Device R2
 U 1 1 5D4EC8B7
 P 3650 2950
 F 0 "R2" H 3720 2996 50  0000 L CNN
@@ -492,7 +486,7 @@ Wire Wire Line
 	1550 1300 1750 1300
 Connection ~ 1550 1300
 $Comp
-L power:LINE #PWR0105
+L mjs_carrier-rescue:LINE-power #PWR0105
 U 1 1 5D4DEC01
 P 1550 1300
 F 0 "#PWR0105" H 1550 1150 50  0001 C CNN
@@ -506,7 +500,7 @@ Wire Wire Line
 	1300 1300 1550 1300
 Connection ~ 1550 1500
 $Comp
-L power:NEUT #PWR0104
+L mjs_carrier-rescue:NEUT-power #PWR0104
 U 1 1 5D4DE228
 P 1550 1500
 F 0 "#PWR0104" H 1550 1350 50  0001 C CNN
@@ -517,7 +511,7 @@ F 3 "" H 1550 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole H14
+L mjs_carrier-rescue:MountingHole-Mechanical H14
 U 1 1 5D4D4DBC
 P 1500 4750
 F 0 "H14" H 1600 4796 50  0000 L CNN
@@ -528,7 +522,7 @@ F 3 "~" H 1500 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H15
+L mjs_carrier-rescue:MountingHole-Mechanical H15
 U 1 1 5D4D48D5
 P 1200 4750
 F 0 "H15" H 1300 4796 50  0000 L CNN
@@ -539,7 +533,7 @@ F 3 "~" H 1200 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H13
+L mjs_carrier-rescue:MountingHole-Mechanical H13
 U 1 1 5D4D450D
 P 1750 4400
 F 0 "H13" H 1850 4446 50  0000 L CNN
@@ -550,7 +544,7 @@ F 3 "~" H 1750 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H16
+L mjs_carrier-rescue:MountingHole-Mechanical H16
 U 1 1 5D4D41F9
 P 950 4400
 F 0 "H16" H 1050 4446 50  0000 L CNN
@@ -561,7 +555,7 @@ F 3 "~" H 950 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H12
+L mjs_carrier-rescue:MountingHole-Mechanical H12
 U 1 1 5D4D3DD0
 P 1500 4100
 F 0 "H12" H 1600 4146 50  0000 L CNN
@@ -572,7 +566,7 @@ F 3 "~" H 1500 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H11
+L mjs_carrier-rescue:MountingHole-Mechanical H11
 U 1 1 5D4D3AD0
 P 1200 4100
 F 0 "H11" H 1300 4146 50  0000 L CNN
@@ -583,7 +577,7 @@ F 3 "~" H 1200 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L mjs_carrier-rescue:MountingHole-Mechanical H4
 U 1 1 5D4D0497
 P 1600 3700
 F 0 "H4" H 1700 3746 50  0000 L CNN
@@ -594,7 +588,7 @@ F 3 "~" H 1600 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L mjs_carrier-rescue:MountingHole-Mechanical H3
 U 1 1 5D4CFFDC
 P 1600 3500
 F 0 "H3" H 1700 3546 50  0000 L CNN
@@ -605,7 +599,7 @@ F 3 "~" H 1600 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L mjs_carrier-rescue:MountingHole-Mechanical H2
 U 1 1 5D4CFBA5
 P 900 3700
 F 0 "H2" H 1000 3746 50  0000 L CNN
@@ -616,7 +610,7 @@ F 3 "~" H 900 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L mjs_carrier-rescue:MountingHole-Mechanical H1
 U 1 1 5D4CF87D
 P 900 3500
 F 0 "H1" H 1000 3546 50  0000 L CNN
@@ -666,7 +660,7 @@ F 3 "" H 4350 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0103
+L mjs_carrier-rescue:+5V-power #PWR0103
 U 1 1 5D29C746
 P 5200 1200
 F 0 "#PWR0103" H 5200 1050 50  0001 C CNN
@@ -689,7 +683,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1300 2500 1300
 $Comp
-L Device:Polyfuse F1
+L mjs_carrier-rescue:Polyfuse-Device F1
 U 1 1 5D290A1E
 P 1900 1300
 F 0 "F1" V 1675 1300 50  0000 C CNN
@@ -702,7 +696,7 @@ F 5 "1175831" V 1900 1300 50  0001 C CNN "OC_FARNELL"
 	0    1    1    0   
 $EndComp
 $Comp
-L Converter_ACDC:IRM-03-5 PS1
+L mjs_carrier-rescue:IRM-03-5-Converter_ACDC PS1
 U 1 1 5D28F5FC
 P 2900 1400
 F 0 "PS1" H 2900 1767 50  0000 C CNN
@@ -713,7 +707,7 @@ F 3 "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF" H 2900 1000 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L mjs_carrier-rescue:Conn_01x02-Connector_Generic J1
 U 1 1 5D28E6A9
 P 1100 1300
 F 0 "J1" H 1018 975 50  0000 C CNN
@@ -819,7 +813,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 2700 9700 2550
 $Comp
-L power:GND #PWR0101
+L mjs_carrier-rescue:GND-power #PWR0101
 U 1 1 5D32ECD1
 P 9700 2700
 F 0 "#PWR0101" H 9700 2450 50  0001 C CNN
@@ -893,8 +887,69 @@ F 3 "" H 7800 2050 50  0000 C CNN
 	1    7800 2050
 	1    0    0    -1  
 $EndComp
-Text Notes 8250 5900 0    50   ~ 0
-RX & TX @ 3.3V
 Text Notes 8450 3850 0    39   ~ 0
 Note: \nGPS, piezo, electrodes, BPW34 footprints \nremoved because we don't need them \nelectrically nor for mechanical support.
+$Comp
+L mjs_carrier-rescue:R-Device R3
+U 1 1 5D6A9BB8
+P 3800 5500
+F 0 "R3" H 3870 5546 50  0000 L CNN
+F 1 "5.1k" H 3870 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3730 5500 50  0001 C CNN
+F 3 "~" H 3800 5500 50  0001 C CNN
+F 4 "2401773" H 3800 5500 50  0001 C CNN "OC_FARNELL"
+	1    3800 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5300 3800 5300
+Wire Wire Line
+	3600 5300 3600 5600
+Wire Wire Line
+	3350 5700 3800 5700
+Wire Wire Line
+	3800 5650 3800 5700
+Connection ~ 3800 5700
+Wire Wire Line
+	3800 5700 4100 5700
+Wire Wire Line
+	3800 5350 3800 5300
+Connection ~ 3800 5300
+$Comp
+L mjs_carrier-rescue:C-Device C2
+U 1 1 5D6BC58F
+P 4350 5500
+F 0 "C2" H 4465 5546 50  0000 L CNN
+F 1 "10u" H 4465 5455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 4388 5350 50  0001 C CNN
+F 3 "~" H 4350 5500 50  0001 C CNN
+F 4 "2990790" H 4350 5500 50  0001 C CNN "OC_FARNEL"
+	1    4350 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5800 4350 5800
+Wire Wire Line
+	3800 5300 4350 5300
+Wire Wire Line
+	4350 5350 4350 5300
+Connection ~ 4350 5300
+Wire Wire Line
+	4350 5300 4650 5300
+Wire Wire Line
+	4350 5650 4350 5800
+Connection ~ 4350 5800
+Wire Wire Line
+	4350 5800 4650 5800
+Text Notes 4450 5650 0    50   ~ 0
+Optional\n
+Connection ~ 9100 5700
+Wire Wire Line
+	9100 5700 9200 5700
+Wire Wire Line
+	9400 5700 9900 5700
+Text Notes 6950 6050 0    50   ~ 0
+0-5V
+Text Notes 6200 6050 0    50   ~ 0
+0-3V3
 $EndSCHEMATC

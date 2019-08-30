@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name TTNApeldoorn)(type KiCad)(uri ${KIPRJMOD}/TTNApeldoorn.pretty)(options "")(descr ""))
+)
