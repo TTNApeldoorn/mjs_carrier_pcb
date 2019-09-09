@@ -235,19 +235,6 @@ Text Notes 8000 3450 1    39   ~ 0
 Programming
 Text Label 6950 5600 0    39   ~ 0
 Vext
-$Comp
-L mjs_carrier-rescue:Conn_01x05-Connector_Generic J4
-U 1 1 5D4F6271
-P 7400 5700
-F 0 "J4" H 7480 5742 50  0000 L CNN
-F 1 "Conn_01x05" H 7480 5651 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S5B-XH-A_1x05_P2.50mm_Horizontal" H 7400 5700 50  0001 C CNN
-F 3 "~" H 7400 5700 50  0001 C CNN
-F 4 "1516293" H 7400 5700 50  0001 C CNN "OC_FARNELL"
-F 5 "Horizontal version because MOQ for vertical at Farnell is 100" H 7400 5700 50  0001 C CNN "Remark"
-	1    7400 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 1700 5550 1700
 $Comp
@@ -952,4 +939,17 @@ Text Notes 6950 6050 0    50   ~ 0
 0-5V
 Text Notes 6200 6050 0    50   ~ 0
 0-3V3
+$Comp
+L mjs_carrier-rescue:Conn_01x05-Connector_Generic J4
+U 1 1 5D4F6271
+P 7400 5700
+F 0 "J4" H 7480 5742 50  0000 L CNN
+F 1 "Conn_01x05" H 7480 5651 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S5B-XH-A_1x05_P2.50mm_Horizontal" H 7400 5700 50  0001 C CNN
+F 3 "~" H 7400 5700 50  0001 C CNN
+F 4 "1516293" H 7400 5700 50  0001 C CNN "OC_FARNELL"
+F 5 "Horizontal version because MOQ for vertical at Farnell is 100" H 7400 5700 50  0001 C CNN "Remark"
+	1    7400 5700
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
