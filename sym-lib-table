@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name mjs_carrier-rescue)(type Legacy)(uri ${KIPRJMOD}/mjs_carrier-rescue.lib)(options "")(descr ""))
+  (lib (name meetjestad)(type Legacy)(uri ${KIPRJMOD}/components/meetjestad.lib)(options "")(descr ""))
 )

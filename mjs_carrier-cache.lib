@@ -1,11 +1,44 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# mjs_carrier-rescue_+3.3V-power
+# meetjestad:STU60N3LH5
 #
-DEF mjs_carrier-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+DEF meetjestad:STU60N3LH5 Q 0 0 Y Y 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "meetjestad:STU60N3LH5" 200 0 50 H V L CNN
+F2 "TO-251" 200 -75 50 H V L CIN
+F3 "" 0 0 50 H V L CNN
+$FPLIST
+ TO-251*
+$ENDFPLIST
+DRAW
+C 50 0 111 0 1 10 N
+C 100 -50 5 0 1 0 N
+C 100 50 5 0 1 0 N
+P 2 0 1 20 25 -40 25 -65 N
+P 2 0 1 20 25 15 25 -15 N
+P 2 0 1 20 25 65 25 40 N
+P 2 0 1 0 120 15 115 10 N
+P 2 0 1 0 120 15 140 15 N
+P 2 0 1 0 140 15 145 20 N
+P 3 0 1 10 0 60 0 -60 0 -60 N
+P 4 0 1 0 30 -50 100 -50 100 -100 100 -100 N
+P 4 0 1 0 30 50 100 50 100 100 100 100 N
+P 4 0 1 0 100 50 130 50 130 -50 100 -50 N
+P 4 0 1 0 130 15 120 -10 140 -10 130 15 F
+P 5 0 1 0 30 0 50 0 100 0 100 -50 100 -50 N
+P 6 0 1 0 35 0 75 15 75 -15 35 0 40 0 40 0 F
+X G 1 -200 -50 200 R 50 50 1 1 I
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mjs_carrier-rescue:+3.3V-power
+#
+DEF mjs_carrier-rescue:+3.3V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "mjs_carrier-rescue_+3.3V-power" 0 140 50 H V C CNN
+F1 "mjs_carrier-rescue:+3.3V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +49,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_+5V-power
+# mjs_carrier-rescue:+5V-power
 #
-DEF mjs_carrier-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+DEF mjs_carrier-rescue:+5V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "mjs_carrier-rescue_+5V-power" 0 140 50 H V C CNN
+F1 "mjs_carrier-rescue:+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +64,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_1N5817-Diode
+# mjs_carrier-rescue:1N5817-Diode
 #
-DEF mjs_carrier-rescue_1N5817-Diode D 0 40 N N 1 F N
+DEF mjs_carrier-rescue:1N5817-Diode D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "mjs_carrier-rescue_1N5817-Diode" 0 -100 50 H V C CNN
+F1 "mjs_carrier-rescue:1N5817-Diode" 0 -100 50 H V C CNN
 F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -50,11 +83,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_AdaFruit_PowerBoost_500c-mjs_carrier
+# mjs_carrier-rescue:AdaFruit_PowerBoost_500c-mjs_carrier
 #
-DEF mjs_carrier-rescue_AdaFruit_PowerBoost_500c-mjs_carrier A 0 40 Y Y 1 F N
+DEF mjs_carrier-rescue:AdaFruit_PowerBoost_500c-mjs_carrier A 0 40 Y Y 1 F N
 F0 "A" -250 450 50 H V C CNN
-F1 "mjs_carrier-rescue_AdaFruit_PowerBoost_500c-mjs_carrier" 50 -450 50 H V C CNN
+F1 "mjs_carrier-rescue:AdaFruit_PowerBoost_500c-mjs_carrier" 50 -450 50 H V C CNN
 F2 "" 0 500 50 H I C CNN
 F3 "" 0 500 50 H I C CNN
 DRAW
@@ -70,11 +103,11 @@ X 5V 8 400 350 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_C-Device
+# mjs_carrier-rescue:C-Device
 #
-DEF mjs_carrier-rescue_C-Device C 0 10 N Y 1 F N
+DEF mjs_carrier-rescue:C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "mjs_carrier-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "mjs_carrier-rescue:C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -88,11 +121,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_CONN_01X02-mjspcb-rescue
+# mjs_carrier-rescue:CONN_01X02-mjspcb-rescue
 #
-DEF mjs_carrier-rescue_CONN_01X02-mjspcb-rescue P 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:CONN_01X02-mjspcb-rescue P 0 40 Y N 1 F N
 F0 "P" 0 150 50 H V C CNN
-F1 "mjs_carrier-rescue_CONN_01X02-mjspcb-rescue" 100 0 50 V V C CNN
+F1 "mjs_carrier-rescue:CONN_01X02-mjspcb-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -110,11 +143,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_CONN_01X04-mjspcb-rescue
+# mjs_carrier-rescue:CONN_01X04-mjspcb-rescue
 #
-DEF mjs_carrier-rescue_CONN_01X04-mjspcb-rescue P 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:CONN_01X04-mjspcb-rescue P 0 40 Y N 1 F N
 F0 "P" 0 250 50 H V C CNN
-F1 "mjs_carrier-rescue_CONN_01X04-mjspcb-rescue" 100 0 50 V V C CNN
+F1 "mjs_carrier-rescue:CONN_01X04-mjspcb-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -136,11 +169,11 @@ X P4 4 -200 -150 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_CONN_01X06-mjspcb-rescue
+# mjs_carrier-rescue:CONN_01X06-mjspcb-rescue
 #
-DEF mjs_carrier-rescue_CONN_01X06-mjspcb-rescue P 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:CONN_01X06-mjspcb-rescue P 0 40 Y N 1 F N
 F0 "P" 0 350 50 H V C CNN
-F1 "mjs_carrier-rescue_CONN_01X06-mjspcb-rescue" 100 0 50 V V C CNN
+F1 "mjs_carrier-rescue:CONN_01X06-mjspcb-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -166,11 +199,11 @@ X P6 6 -200 -250 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_CONN_01X11-mjspcb-rescue
+# mjs_carrier-rescue:CONN_01X11-mjspcb-rescue
 #
-DEF mjs_carrier-rescue_CONN_01X11-mjspcb-rescue P 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:CONN_01X11-mjspcb-rescue P 0 40 Y N 1 F N
 F0 "P" 0 600 50 H V C CNN
-F1 "mjs_carrier-rescue_CONN_01X11-mjspcb-rescue" 100 0 50 V V C CNN
+F1 "mjs_carrier-rescue:CONN_01X11-mjspcb-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -206,11 +239,11 @@ X P9 9 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_Conn_01x02-Connector_Generic
+# mjs_carrier-rescue:Conn_01x02-Connector_Generic
 #
-DEF mjs_carrier-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "mjs_carrier-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
+F1 "mjs_carrier-rescue:Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -225,11 +258,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_Conn_01x03-Connector_Generic
+# mjs_carrier-rescue:Conn_01x03-Connector_Generic
 #
-DEF mjs_carrier-rescue_Conn_01x03-Connector_Generic J 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:Conn_01x03-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "mjs_carrier-rescue_Conn_01x03-Connector_Generic" 0 -200 50 H V C CNN
+F1 "mjs_carrier-rescue:Conn_01x03-Connector_Generic" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -246,11 +279,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_Conn_01x05-Connector_Generic
+# mjs_carrier-rescue:Conn_01x05-Connector_Generic
 #
-DEF mjs_carrier-rescue_Conn_01x05-Connector_Generic J 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:Conn_01x05-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "mjs_carrier-rescue_Conn_01x05-Connector_Generic" 0 -300 50 H V C CNN
+F1 "mjs_carrier-rescue:Conn_01x05-Connector_Generic" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -271,11 +304,11 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_Conn_01x06-Connector_Generic
+# mjs_carrier-rescue:Conn_01x06-Connector_Generic
 #
-DEF mjs_carrier-rescue_Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
+DEF mjs_carrier-rescue:Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "mjs_carrier-rescue_Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
+F1 "mjs_carrier-rescue:Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -298,11 +331,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_GND-Adafruit_PowerBoost_500C-eagle-import
+# mjs_carrier-rescue:GND-Adafruit_PowerBoost_500C-eagle-import
 #
-DEF mjs_carrier-rescue_GND-Adafruit_PowerBoost_500C-eagle-import ~ 0 40 Y Y 1 L P
+DEF mjs_carrier-rescue:GND-Adafruit_PowerBoost_500C-eagle-import ~ 0 40 Y Y 1 L P
 F0 "" 0 0 50 H I C CNN
-F1 "mjs_carrier-rescue_GND-Adafruit_PowerBoost_500C-eagle-import" -60 -100 42 H V L BNN
+F1 "mjs_carrier-rescue:GND-Adafruit_PowerBoost_500C-eagle-import" -60 -100 42 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -311,11 +344,11 @@ X GND 1 0 100 100 D 0 0 1 0 W
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_GND-power
+# mjs_carrier-rescue:GND-power
 #
-DEF mjs_carrier-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF mjs_carrier-rescue:GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "mjs_carrier-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "mjs_carrier-rescue:GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -324,11 +357,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_IRM-03-5-Converter_ACDC
+# mjs_carrier-rescue:IRM-03-5-Converter_ACDC
 #
-DEF mjs_carrier-rescue_IRM-03-5-Converter_ACDC PS 0 20 Y Y 1 F N
+DEF mjs_carrier-rescue:IRM-03-5-Converter_ACDC PS 0 20 Y Y 1 F N
 F0 "PS" 0 250 50 H V C CNN
-F1 "mjs_carrier-rescue_IRM-03-5-Converter_ACDC" 0 -250 50 H V C CNN
+F1 "mjs_carrier-rescue:IRM-03-5-Converter_ACDC" 0 -250 50 H V C CNN
 F2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT" 0 -350 50 H I C CNN
 F3 "" 0 -400 50 H I C CNN
 $FPLIST
@@ -355,11 +388,11 @@ X 5 NC -300 0 100 R 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_LINE-power
+# mjs_carrier-rescue:LINE-power
 #
-DEF mjs_carrier-rescue_LINE-power #PWR 0 0 Y Y 1 F P
+DEF mjs_carrier-rescue:LINE-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "mjs_carrier-rescue_LINE-power" 0 150 50 H V C CNN
+F1 "mjs_carrier-rescue:LINE-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -369,11 +402,11 @@ X LINE 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_MountingHole-Mechanical
+# mjs_carrier-rescue:MountingHole-Mechanical
 #
-DEF mjs_carrier-rescue_MountingHole-Mechanical H 0 40 Y Y 1 F N
+DEF mjs_carrier-rescue:MountingHole-Mechanical H 0 40 Y Y 1 F N
 F0 "H" 0 200 50 H V C CNN
-F1 "mjs_carrier-rescue_MountingHole-Mechanical" 0 125 50 H V C CNN
+F1 "mjs_carrier-rescue:MountingHole-Mechanical" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -384,11 +417,11 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_NEUT-power
+# mjs_carrier-rescue:NEUT-power
 #
-DEF mjs_carrier-rescue_NEUT-power #PWR 0 0 Y Y 1 F P
+DEF mjs_carrier-rescue:NEUT-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "mjs_carrier-rescue_NEUT-power" 0 150 50 H V C CNN
+F1 "mjs_carrier-rescue:NEUT-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -398,11 +431,11 @@ X NEUT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_Polyfuse-Device
+# mjs_carrier-rescue:Polyfuse-Device
 #
-DEF mjs_carrier-rescue_Polyfuse-Device F 0 0 N Y 1 F N
+DEF mjs_carrier-rescue:Polyfuse-Device F 0 0 N Y 1 F N
 F0 "F" -100 0 50 V V C CNN
-F1 "mjs_carrier-rescue_Polyfuse-Device" 100 0 50 V V C CNN
+F1 "mjs_carrier-rescue:Polyfuse-Device" 100 0 50 V V C CNN
 F2 "" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -418,11 +451,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mjs_carrier-rescue_R-Device
+# mjs_carrier-rescue:R-Device
 #
-DEF mjs_carrier-rescue_R-Device R 0 0 N Y 1 F N
+DEF mjs_carrier-rescue:R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "mjs_carrier-rescue_R-Device" 0 0 50 V V C CNN
+F1 "mjs_carrier-rescue:R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
